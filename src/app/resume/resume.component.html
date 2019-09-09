@@ -1,0 +1,34 @@
+<div class="grid-resume center">
+  <div class="titel bold-titel">Evgeniy – FullStack .Net Developer</div>
+  <mat-card class="card-container">
+    <mat-card-content class="card-container-first">
+      <p class="bold-titel-small">Summary of Qualifications</p>
+    </mat-card-content>
+    <mat-card-content class="card-container-second"><p>Developer with more than 4 years of experience in Web and Server-side development and .Net stack. Has a track of successfully developed and support project of different scales from small to yearly developing projects. Was working in a different teams and completed all necessary tasks either backend or frontend. Able to perform full software development life cycle activates.</p></mat-card-content>
+  </mat-card>
+  <div class="titel bold-titel">Experience</div>
+  <mat-card class="card-exp" *ngFor="let exp of experiences">
+    <mat-card-header>
+      <div mat-card-avatar [style.width.px]="50" [style.height.px]="50" class="header-{{exp.headerImage}}"></div>
+      <mat-card-title class="bold-titel-small">{{exp.company}}</mat-card-title>
+      <mat-card-subtitle>{{exp.workTime}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content><p></p><p>{{exp.description}}</p></mat-card-content>
+    <mat-card-actions class="skills">
+      <div mat-card-avatar *ngFor="let skill of exp.skills" [style.width.px]="60" [style.height.px]="60" class="header-{{skill}}"></div>
+    </mat-card-actions>
+  </mat-card>
+  <div class="titel bold-titel">Some of the projects</div>
+  <mat-card class="card-exp" *ngFor="let proj of projects">
+    <mat-card-header>
+      <div mat-card-avatar [style.width.px]="50" [style.height.px]="50" class="header-{{proj.headerImage}}"></div>
+      <mat-card-title><a href="{{proj.link}}">{{proj.project}}</a></mat-card-title>
+      <mat-card-subtitle>{{proj.workTime}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content><p></p><p>{{proj.description}}</p></mat-card-content>
+    <mat-card-actions class="skills">
+      <button mat-button mat-raised-button color="primary" *ngFor="let skill of proj.technologies">{{skill}}</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

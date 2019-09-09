@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: sf-ui-regular !important;
+  font-size: 16px !important;
+  background-color: #fafafa
+}
+
+.mat-card, .mat-card-content, .mat-card-content, .mat-card-subtitle {
+  font-family: sf-ui-regular;
+  font-size: 16px !important;
+}
+
+@font-face {
+  font-family: 'sf-ui-regular';
+  src: url('assets/ui/regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'sf-ui-bold';
+  src: url('assets/ui/sf-ui-display-bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'sf-ui-semibold';
+  src: url('assets/ui/sf-ui-display-semibold.otf') format('opentype');
+}
+
+.semibold-titel {
+  font-family: sf-ui-semibold;
+  font-size: 18px !important;
+}
+
+.bold-titel {
+  font-family: sf-ui-bold;
+  font-size: 27px !important;
+}
+
+.bold-titel-small {
+  font-family: sf-ui-bold;
+  font-size: 21px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.grid-resume {
+  max-width: 1100px;
+}
+
+.titel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
